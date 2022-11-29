@@ -1,8 +1,8 @@
 /* Global Styling Start */
 :root {
-    --black: #202123;
-    --dark-black: #181717;
-    --dark-gray: #323336;
+    --dark: #212121;
+    --dark-black: #181818;
+    --gray: #7c7676;
   }
 
 *{
@@ -13,7 +13,7 @@
 
 body{
     font-family: sans-serif;
-    background-color: var(--black);
+    background-color: var(--dark);
     color: white;
 }
 
@@ -26,10 +26,28 @@ i{
 /* Header Styling Start */
 header{
     display: grid;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 1rem;
+    width: 100vw;
+}
+
+.search-bar-div{
+    display: grid;
+    grid-template-columns: 10rem 1fr 20rem;
+    gap: 2rem;
+    padding: 1rem;
+    position: relative;
+    align-items: center;
+}
+
+.search-bar-div ul li{
+    display: inline;
 }
 
 #googleimg{
     width: 7.5rem;
+    position: relative;
+    bottom: 1.45em;
 }
 
 input{
@@ -41,9 +59,58 @@ input{
     color: white;
 }
 
+form{
+    display: grid;
+    position: relative;
+    bottom: 1.7em;
+}
+
+#search{
+    position: absolute;
+    left: 38em;
+    top: 0.8em
+}
+
+#cam{
+    position: absolute;
+    left: 36em;
+    top: 0.8em
+}
+
+#mic{
+    position: absolute;
+    left: 34em;
+    top: 0.8em
+}
+
+.search-bar-div ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    position: absolute;
+    right: 1em;
+    top: 1.8em;    
+}
+
 #shoman{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+nav ul{
+    list-style: none;
+    margin-left: 12rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(6, 6%) 1fr;
+}
+
+#all-li{
+    padding-left: 2rem;
+}
+
+#last-li{
+    padding-left: 6rem;
 }
 /* Header Styling End */
