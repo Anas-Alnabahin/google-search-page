@@ -1,0 +1,49 @@
+/* Global Styling Start */
+:root {
+    --black: #202123;
+    --dark-black: #181717;
+    --dark-gray: #323336;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: var(--black);
+    color: white;
+}
+
+i{
+    width: 5px; 
+}
+/* Global Styling End */
+
+
+/* Header Styling Start */
+header{
+    display: grid;
+}
+
+#googleimg{
+    width: 7.5rem;
+}
+
+input{
+    width: 40rem;
+    height: 2.5rem;
+    background-color: #252526;
+    border: 1px solid #afafb6;
+    border-radius: 20px;
+    color: white;
+}
+
+#shoman{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+/* Header Styling End */
