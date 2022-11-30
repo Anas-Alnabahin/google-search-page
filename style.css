@@ -130,8 +130,7 @@ nav li{
 main{
     display: grid; 
     grid-template-columns:  70% 30% ;
-    grid-template-rows: 30% 30% 1fr;
-    gap: 3px;
+    grid-template-rows: 25% 25% 1fr 1fr;
 }
 
 .results-section{
@@ -183,4 +182,108 @@ aside{
 .aside-second-div{
     padding: 1rem;
 }
+
+.related-section{
+    grid-row-start: 4;
+    margin-top: 110px;
+    margin-left: 230px;
+}
+
+.relateddiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    gap: 15px;
+}
+
+.relateddiv i{
+    margin-right: 2.5rem;
+}
+
+.relateddiv p{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--gray);
+    border-radius: 35px;
+}
+
+h4{
+    margin-bottom: 25px;
+}
 /* Main Styling Start */
+
+
+/* Footer Styling Start */
+footer{
+    width: 100%s;
+}
+
+.pagination-div{
+    margin-left: 450px;
+    position: relative;
+    bottom: 250px;
+    height: 10px;
+    width: 300px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 1fr 1fr;
+}
+
+#arrow{
+    margin-left: 15px;
+    color: rgb(85, 85, 250);
+}
+
+#next{
+    color: rgb(85, 85, 250);
+}
+
+.marg{
+    position: relative;
+    left: 27px;
+    top: 15px;
+}
+
+.pagination-div ul{
+    list-style: none;
+}
+
+.pagination-div ul li{
+    display: inline;
+    margin-left: 5px;
+}
+
+.footerdiv1{
+    background-color:#141416;
+    height: 40px;
+    padding-top: 15px;
+    padding-left: 30px;
+    color: #919197;
+}
+
+.footerdiv2{
+    background-color:#141416;
+    height: 40px;
+    border-top: 1px solid #919197;
+    padding-top: 15px;
+    padding-left: 25px;
+    color: #919197;
+}
+
+.footerdiv2 ul li{
+    display: inline;
+    padding: 0 5px;
+}
+
+.footerdiv2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Footer Styling End */
